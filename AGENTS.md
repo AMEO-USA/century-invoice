@@ -68,6 +68,8 @@ do not duplicate rules there.
     details and tax identifiers are sensitive. Never commit real client data,
     credentials or exported invoices; use synthetic fixtures. Never print
     secrets, cookies or session files.
+14. Don't create new Colima/Lima VMs; use the default one. If you must, delete
+    it with `colima delete -p <name>` when the task ends.
 
 ## Fixes must fit the full system
 
