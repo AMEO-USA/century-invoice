@@ -1,0 +1,73 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*_creds.json
+*Credentials*.json
+.github-deploy-key/
+
+# Local UAT account handover; contains generated passwords.
+/accounts.json
+
+# Client-supplied reference material and real invoices (personal/financial data); never commit
+/client_doc/
+/client_docs/
+/docs/from_client/
+
+# Editors / OS
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node
+node_modules/
+**/node_modules/
+dist/
+build/
+.next/
+.turbo/
+.pnpm-store/
+*.tsbuildinfo
+coverage/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Test / browser tooling output
+test-results/
+playwright-report/
+.playwright-mcp/
+
+# Per-developer MCP config (Mera PMT token reference)
+/.mcp.json
+
+# Per-developer agent state
+/.claude/settings.local.json
+/.claude/worktrees/
+/.worktrees/
+.codex/
+.opencode/
+.antigravitycli/
+/.omo/
+
+# Local scratch and generated output
+/scratch/
+/outputs/
+/artifacts/
