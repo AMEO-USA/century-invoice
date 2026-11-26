@@ -8,10 +8,10 @@ do not duplicate rules there.
 ## Working agreements (must follow)
 
 1. **Use PMT for durable work.** Mera PMT is the canonical durable plan system.
-   A `century-invoice` PMT connector is not configured yet. Until it is, ask
-   the owner where to track a plan, and do not write to another project's
-   connector. Once it exists, call `list_projects` first in each PMT task and
-   continue only when it resolves to this project. Search before creating
+   Use the `pmt-century-invoice` connector (`pmt_century_invoice` in the
+   repo `.mcp.json`; token from `PMT_MCP_TOKEN_CENTURY_INVOICE`) and call
+   `list_projects` first in each PMT task; continue only when it resolves to
+   this project, and never write to another project's connector. Search before creating
    plans, follow the human-governed lifecycle (New → Thinking → WIP → Done),
    claim only approved WIP work, and record decisions and evidence there.
    Status-change requests never approve themselves. If PMT is unavailable, use
